@@ -1,4 +1,3 @@
-
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
@@ -19,8 +18,6 @@ const WelcomeScreen: React.FC<NativeStackScreenProps<any>> = ({ navigation }) =>
     </View>
   );
 }
-
-// HI
 
 const styles = StyleSheet.create({
   container: {

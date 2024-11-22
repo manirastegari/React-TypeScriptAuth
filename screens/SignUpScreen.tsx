@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
@@ -60,7 +59,7 @@ const SignUpScreen = () => {
           <View style={{ marginBottom: 10 }}>
             <Text style={{ color: 'red', fontSize: 14 }}>{userObject.error}</Text>
           </View>
-        }@
+        }
         
         <TouchableOpacity 
           style={styles.buttonStyle}
@@ -104,14 +103,3 @@ const styles = StyleSheet.create({
 });
 
 export default SignUpScreen;
-
-
-
-
-
-
-
-
-
-
-

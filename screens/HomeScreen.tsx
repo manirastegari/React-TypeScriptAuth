@@ -1,4 +1,3 @@
-
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { userAuthentication } from '../config/userAuthentication';
 import { signOut } from 'firebase/auth';
@@ -10,7 +9,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Welcome {user?.email}</Text>
+      <Text style={styles.userText}>Welcome {user?.email}</Text>
       <TouchableOpacity 
           style={styles.buttonStyle}
           onPress={() => signOut(FIREBASE_AUTH)} >
@@ -39,8 +38,13 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '500',
     color: 'white'
+  },
+  userText: {
+    fontSize: 20,
+    fontWeight: '500',
+    color: 'chocolate',
+    marginBottom: 20
   }
 });
 
 export default HomeScreen;
-

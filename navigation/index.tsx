@@ -8,4 +8,3 @@ export default function RootNavigation() {
 
     return user ? <HomeStack /> : <WelcomeStack />
 }
-

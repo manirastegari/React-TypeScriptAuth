@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -24,7 +23,7 @@ const SignInScreen = () => {
     try {
       await signInWithEmailAndPassword(FIREBASE_AUTH, userObject.email, userObject.password)
       .then((result) => {
-        console.log("User Logged in: "+result.user);
+        console.log("User Logged in: "+result.user.email);
       })
     } catch(e) {
       setUserObject({
@@ -104,8 +103,3 @@ const styles = StyleSheet.create({
 });
 
 export default SignInScreen;
-
-
-
-
-
