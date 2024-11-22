@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { userAuthentication } from '../config/userAuthentication';
 import HomeStack from './HomeStack';
@@ -9,3 +8,4 @@ export default function RootNavigation() {
 
     return user ? <HomeStack /> : <WelcomeStack />
 }
+

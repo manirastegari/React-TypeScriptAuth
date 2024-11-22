@@ -20,6 +20,8 @@ const WelcomeScreen: React.FC<NativeStackScreenProps<any>> = ({ navigation }) =>
   );
 }
 
+// HI
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
